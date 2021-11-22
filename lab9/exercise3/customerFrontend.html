@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exercise 3: Web Store
+        </title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+
+
+    <body>
+        <form action="customerBackend.php" method = post onsubmit= "return formChecker()">
+            Username: <input type="text" name="username" id="username">
+            Password: <input type="password" name="password" id="password">
+            <input class="reset" type="reset" value = "Reset">
+            <input class="submit" type="submit" value = "Submit"><br>
+
+            <br><u>Item 1</u><br>
+            Apple: $1.00<br>
+            Quantity: <input type = "number" name = "Quantity1" value = "0"><br><br>
+
+            <br><u>Item 2</u><br>
+            Banana: $2.00<br>
+            Quantity: <input type = "number" name = "Quantity2" value = "0"><br><br>
+
+            <br><u>Item 3</u><br>
+            Orange: $3.00<br>
+            Quantity: <input type = "number" name = "Quantity3" value = "0"><br><br>
+
+            <input type = "radio" name = "shipping" value = 0>Free 7 day<br>
+            <input type = "radio" name = "shipping" value = 50>$50.00 over night<br>
+            <input type = "radio" name = "shipping" value = 5>$5.00 three day<br>
+    </body>    
+    <script src="formChecker.js" ></script>
+</html>
